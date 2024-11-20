@@ -523,7 +523,7 @@ class ChirpMain(wx.Frame):
             return
 
         def _detach(event):
-            new = ChirpMain(None, title='CHIRP')
+            new = ChirpMain(None, title='UKIT')
             self._editors.RemovePage(selected)
             eset.Reparent(new._editors)
             new.add_editorset(eset)
