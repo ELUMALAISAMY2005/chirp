@@ -540,7 +540,7 @@ class ChirpMain(wx.Frame):
         if sys.platform == 'win32':
             icon = 'chirp.ico'
         else:
-            icon = 'chirp.png'
+            icon = 'URIMAIGAL.png'
         with resources.as_file(
             resources.files('chirp.share').joinpath(icon)
         ) as path:
