@@ -211,7 +211,7 @@ def chirpmain():
         os.putenv('GDK_BACKEND', 'x11')
 
     app.SetAppName('UKIT')
-    mainwindow = main.ChirpMain(None, title='CHIRP')
+    mainwindow = main.ChirpMain(None, title='UKIT')
     mainwindow.Show()
 
     if args.module:
