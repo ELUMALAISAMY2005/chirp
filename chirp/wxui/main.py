@@ -480,7 +480,7 @@ class ChirpMain(wx.Frame):
     def _paint_add_tab_panel(self, event):
         panel = event.GetEventObject()
         dc = wx.PaintDC(panel)
-        dc.SetBackground(wx.Brush("BLACK"))
+        dc.SetBackground(wx.Brush("GREEN"))
 
         img_size = self.add_tab_bm.GetSize()
         my_size = panel.GetSize()
