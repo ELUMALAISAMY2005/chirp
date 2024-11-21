@@ -1696,7 +1696,7 @@ class ChirpMain(wx.Frame):
         directory.enable_reregistrations()
         self.SetTitle('CHIRP **%s**' % _('Module Loaded'))
 
-        self.SetBackgroundColour(( 0x00, 0x00, 0x00, 0xFF))
+        self.SetBackgroundColour((0xEA, 0x62, 0x62, 0xFF))
 
         with open(filename, 'rb') as module:
             code = module.read()
