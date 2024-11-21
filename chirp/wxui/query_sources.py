@@ -80,8 +80,7 @@ class NumberValidator(wx.Validator):
         win.Bind(wx.EVT_TEXT, self._colorchange)
 
     def _colorchange(self, event):
-        self.GetWindow().SetBackgroundColour(
-            wx.SystemSettings.GetColour(wx.SYS_COLOUR_WINDOW))
+       self.GetWindow().SetBackgroundColour(wx.Colour(0, 255, 0))
 
 
 class LatValidator(NumberValidator):
