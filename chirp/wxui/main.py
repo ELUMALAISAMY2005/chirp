@@ -448,7 +448,7 @@ class ChirpMain(wx.Frame):
         if len(ALL_MAIN_WINDOWS) == 1:
             # Only add the welcome page to the first window opened
             welcome_page = ChirpWelcomePanel(self._editors)
-            self._editors.AddPage(welcome_page, _('Welcome'), select=True)
+            self._editors.AddPage(welcome_page, _('HELLO IM ELUMALAI'), select=True)
 
         self.Bind(wx.aui.EVT_AUINOTEBOOK_PAGE_CLOSE, self._editor_close)
         self.Bind(wx.aui.EVT_AUINOTEBOOK_PAGE_CHANGED,
