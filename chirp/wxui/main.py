@@ -538,9 +538,9 @@ class ChirpMain(wx.Frame):
 
     def set_icon(self):
         if sys.platform == 'win32':
-            icon = 'chirp.ico'
+            icon = 'UKIT.png'
         else:
-            icon = 'chirp.png'
+            icon = 'UKIT.png'
         with resources.as_file(
             resources.files('chirp.share').joinpath(icon)
         ) as path:
