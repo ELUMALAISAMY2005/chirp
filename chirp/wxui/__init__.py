@@ -202,6 +202,7 @@ def chirpmain():
 
     if developer_mode():
         LOG.warning('Developer mode is enabled')
+        LOG.warning('ELU')
         from chirp.drivers import fake
         fake.register_fakes()
 
@@ -210,8 +211,8 @@ def chirpmain():
     if sys.platform == 'linux' and not args.no_linux_gdk_backend:
         os.putenv('GDK_BACKEND', 'x11')
 
-    app.SetAppName('UKIT')
-    mainwindow = main.ChirpMain(None, title='UKIT')
+    app.SetAppName('CHIRP')
+    mainwindow = main.ChirpMain(None, title='CHIRP')
     mainwindow.Show()
 
     if args.module:
