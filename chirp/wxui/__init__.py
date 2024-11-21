@@ -210,7 +210,7 @@ def chirpmain():
     if sys.platform == 'linux' and not args.no_linux_gdk_backend:
         os.putenv('GDK_BACKEND', 'x11')
 
-    app.SetAppName('CHIRP')
+    app.SetAppName('UKIT')
     mainwindow = main.ChirpMain(None, title='CHIRP')
     mainwindow.Show()
 
