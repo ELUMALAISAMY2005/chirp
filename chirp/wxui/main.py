@@ -380,12 +380,12 @@ class ChirpWelcomePanel(wx.Panel):
         locale = wx.App.Get()._lc.GetCanonicalName()
         locale_base_path = resources.files('chirp.share')
         welcome_file = locale_base_path.joinpath(
-            'welcome_screen_%s.png' % locale)
+            'UKIT.png' % locale)
         if not os.path.exists(welcome_file):
             welcome_file = locale_base_path.joinpath(
-                'welcome_screen_%s.png' % locale[0:2])
+                'UKIT.png' % locale[0:2])
         if not os.path.exists(welcome_file):
-            welcome_file = locale_base_path.joinpath('welcome_screen.png')
+            welcome_file = locale_base_path.joinpath('UKIT.png')
 
         with resources.as_file(welcome_file) as welcome:
             bmp = wx.Bitmap(str(welcome))
