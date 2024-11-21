@@ -448,7 +448,7 @@ class ChirpMain(wx.Frame):
         if len(ALL_MAIN_WINDOWS) == 1:
             # Only add the welcome page to the first window opened
             welcome_page = ChirpWelcomePanel(self._editors)
-            self._editors.AddPage(welcome_page, _('HELLO IM ELUMALAI'), select=True)
+            self._editors.AddPage(welcome_page, _('WELCOME TO UKIT'), select=True)
 
         self.Bind(wx.aui.EVT_AUINOTEBOOK_PAGE_CLOSE, self._editor_close)
         self.Bind(wx.aui.EVT_AUINOTEBOOK_PAGE_CHANGED,
@@ -1127,9 +1127,9 @@ class ChirpMain(wx.Frame):
             is_memedit = isinstance(eset.current_editor, memedit.ChirpMemEdit)
             is_bank = isinstance(eset.current_editor, bankedit.ChirpBankEdit)
             can_edit = not is_network
-            self.SetTitle('CHIRP (%s)' % os.path.basename(eset.filename))
+            self.SetTitle('UKIT (%s)' % os.path.basename(eset.filename))
         else:
-            self.SetTitle('CHIRP')
+            self.SetTitle('UKIT')
 
         if self.current_editorset:
             radio = self.current_editorset.radio
