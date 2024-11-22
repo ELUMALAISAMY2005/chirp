@@ -22,6 +22,30 @@ import serial
 
 from chirp import chirp_common
 from chirp.drivers import idrp
+import argparse
+import sys
+
+def set_frequency(frequency):
+    # Add code to set frequency on the device
+    print(f"Setting frequency to {frequency}")
+
+def read_frequency():
+    # Add code to read the current frequency from the device
+    print("Reading current frequency...")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--set', help='Set frequency')
+    parser.add_argument('--read', action='store_true', help='Read current frequency')
+    args = parser.parse_args()
+
+    if args.set:
+        set_frequency(args.set)
+    elif args.read:
+        read_frequency()
+    else:
+        print("Invalid command")
+
 
 
 def open_device(dev):

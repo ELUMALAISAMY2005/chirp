@@ -4,7 +4,6 @@ from importlib import resources
 import logging
 import os
 import sys
-
 from chirp import CHIRP_VERSION
 from chirp import directory
 from chirp import logger
@@ -202,7 +201,6 @@ def chirpmain():
 
     if developer_mode():
         LOG.warning('Developer mode is enabled')
-        LOG.warning('ELU')
         from chirp.drivers import fake
         fake.register_fakes()
 
