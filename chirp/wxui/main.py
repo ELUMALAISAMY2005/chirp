@@ -375,10 +375,8 @@ class ChirpWelcomePanel(wx.Panel):
 
         vbox = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(vbox)
-        self.SetBackgroundColour(wx.Colour(0, 255, 0))
         panel = wx.Panel(self)
-        panel.SetBackgroundColour(wx.Colour(240, 240, 240))  
-
+        panel.SetBackgroundColour(wx.Colour(255, 255, 255)) 
         # Search for welcome_screen_en_US, welcome_screen_en, welcome_screen
         locale = wx.App.Get()._lc.GetCanonicalName()
         locale_base_path = resources.files('chirp.share')
