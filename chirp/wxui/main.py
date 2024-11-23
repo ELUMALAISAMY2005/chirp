@@ -375,6 +375,7 @@ class ChirpWelcomePanel(wx.Panel):
 
         vbox = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(vbox)
+        self.SetBackgroundColour(wx.Colour(0, 255, 0))
 
         # Search for welcome_screen_en_US, welcome_screen_en, welcome_screen
         locale = wx.App.Get()._lc.GetCanonicalName()
@@ -392,6 +393,7 @@ class ChirpWelcomePanel(wx.Panel):
         width, height = self.GetSize()
         img = wx.StaticBitmap(self, wx.ID_ANY, bmp)
         vbox.Add(img, 1, flag=wx.EXPAND)
+
 
     def close(self):
         pass
